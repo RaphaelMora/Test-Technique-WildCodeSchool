@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-  width: 100%;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   list-style: none;
@@ -10,11 +9,12 @@ body {
 header {
   background: #f4f4f4;
   text-align: center;
-  padding: 2em;
+  padding: 3em;
 }
 
 header img {
-  max-width: 96px;
+  max-width: 96px;  
+
 }
 
 header h1 {
@@ -40,9 +40,28 @@ label {
 }
 
 footer {
-  margin-top: 2em;
+  margin-top: 25em;
   text-align: center;
   color: #fff;
   background: #f76c6c;
   padding: 0.25em 0;
+}
+
+@media screen and (min-width: 320px ) and (max-width: 767px ){
+  header{
+    margin-bottom: 20%;
+
+  }
+  header img {
+    margin-bottom: 10%;
+  }
+  header h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+  }
+  footer{
+    margin-top: 16em;
+  }
 }
